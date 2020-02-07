@@ -24,15 +24,9 @@ handleOnClick = e => {
 
   render() {
     return (
-      <div>
-        <button onClick={this.handleOnClick}>
+      <div className="search">
+        <button onClick={this.props.search}>
           Random Cocktail!</button>
-
-      {this.state.drink && (
-        <RandomDrinkDisplay drink ={this.state.drink}/>
-      ) 
-        
-      }
       </div>
     )
 }
